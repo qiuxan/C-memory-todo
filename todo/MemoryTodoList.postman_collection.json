@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "ae652518-074b-4780-9551-b8fe0c777e2b",
+		"name": "MemoryTodoList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5028262"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\":1,\r\n    \"Name\":\"item1\",\r\n    \"IsComplete\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7218/todo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7218",
+					"path": [
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7218/todo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7218",
+					"path": [
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetItemById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7218/todo/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7218",
+					"path": [
+						"todo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\":2,\r\n    \"Name\":\"itemEdited\",\r\n    \"IsComplete\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7218/todo/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7218",
+					"path": [
+						"todo",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7218/todo/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7218",
+					"path": [
+						"todo",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
